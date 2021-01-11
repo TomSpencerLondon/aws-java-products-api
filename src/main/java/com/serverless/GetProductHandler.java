@@ -2,14 +2,11 @@ package com.serverless;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.serverless.dal.Product;
 import org.apache.log4j.Logger;
+
 import java.util.Collections;
 import java.util.Map;
-
-import com.serverless.dal.Product;
 
 public class GetProductHandler implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
 
